@@ -70,8 +70,10 @@ int firstMemberIndex = -1;
 
 int index = 0;
 for (MethodNode method : patched.methods) {
+    // get the mixin name from the @MixinMerged annotation.
     final String mixinName = getMixin(method);
     if (mixinName != null) {
+        // if the mixin name of "method" is the same as the mixin name of the overwrite method.
         if (mixinName.equals(mixin.name)) {
             firstMemberIndex = index;
             break;
