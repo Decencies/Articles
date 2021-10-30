@@ -147,4 +147,4 @@ In previous versions of lunar client, they also checked if you were proxying the
 
 Lunar client is a Minecraft client, with that in mind I think they have delivered a decent product.
 
-I firmly belive that everyone should know how things work behind the scenes, hence I've written this article to cover how they've made it harder for people to fix their own copy of the software.
+I firmly believe that everyone should know how things work behind the scenes, hence I've written this article to cover how they've made it harder for people to fix their own copy of the software.
