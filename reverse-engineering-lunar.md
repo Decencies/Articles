@@ -86,7 +86,7 @@ int mixinMemberIndex = patchedOverwriteIndex - firstMemberIndex;
 // skip constructor
 int offset = 1;
 
-// skip shadow methods
+// increase offset by 1 if the next method is a @Shadow method.
 for (int i = 0; i < mixin.methods.size(); i++) {
     final MethodNode methodNode = mixin.methods.get(i);
     if ((methodNode.access & Opcodes.ACC_ABSTRACT) != 0) {
