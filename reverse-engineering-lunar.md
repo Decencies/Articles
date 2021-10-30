@@ -102,10 +102,10 @@ for (int i = 0; i < mixin.methods.size(); i++) {
 mixinMemberIndex += offset;
 ```
 
-This proved especially useful, because as mentioned the method in the mixin class retained it's original Minecraft method name. This way I could simply run through the Minecraft class, find a method with the matching name, and boom, I found what method the Overwrite belongs to. Then I could simply get the index of where the class lies in the Minecraft class, and re-arrange it in the patched class so my index-based mapping sollution will work.
+This proved especially useful, because as mentioned the method in the mixin class retained it's original Minecraft method name. This way I could simply run through the Minecraft class, find a method with the matching name, and boom, I found what method the Overwrite belongs to. Then I could simply get the index of where the method lies in the Minecraft class, and re-arrange the patched method in the patched class so my index-based mapping sollution will work.
 
 Next on the list was the `@Proxy` annotation we breifly mentioned before.
-This annotation retains the original name of the minecraft method, which was really kind of the Lunar developers to do. While `@Proxy` is similar to `@Overwrite`, it will keep the original method instead of directly overwriting it. This is sort of a method passthrough, if you want to call the original method you're overwriting you can't do thatby default with `@Overwrites` (unless I'm mistaken), so overwrites retain the original method for later use.
+This annotation retains the original name of the minecraft method, which was really kind of the Lunar developers to do. While `@Proxy` is similar to `@Overwrite`, it will keep the original method instead of directly overwriting it. This is sort of a method passthrough, if you want to call the original method you're overwriting you can't do that by default with `@Overwrites` (unless I'm mistaken), so overwrites retain the original method for later use.
 
 I saw a few classes were missing their original method, which was strange. Using the proxy method name, I could just run through the original minecraft class, find the method with the matching proxy target name, and insert the proxy method in place of where the original method would have been.
 
