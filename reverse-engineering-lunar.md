@@ -1,6 +1,8 @@
 # Reverse Engineering Lunar
 
-![Funny GIF](https://c.tenor.com/ZmEmeZQ4I1IAAAAd/lmao-lunar-client.gif)
+<p align="center">
+  <img src="https://c.tenor.com/ZmEmeZQ4I1IAAAAd/lmao-lunar-client.gif">
+</p>
 
 ### Introduction
 Lunar Client, developed by Moonsworth, is a Minecraft modification that contains many modules and quality of life improvements; the ultimate goal of which is to make the game more enjoyable to play.
